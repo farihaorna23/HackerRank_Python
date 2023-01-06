@@ -64,3 +64,6 @@ def diagonalDifference(arr):
         left_digonal_sum += arr[i][i]
         right_digonal_sum += arr[i][n-1-i]
     return abs(left_digonal_sum - right_digonal_sum)
+
+
+
