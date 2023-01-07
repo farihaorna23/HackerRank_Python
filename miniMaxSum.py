@@ -27,3 +27,14 @@ def miniMaxSum1(arr):
 
 miniMaxSum1([3,1,5,2,4])
 
+def miniMaxSum2(arr):
+  #get the total sum
+  # to get the minimum value, subtract total sum of arr with the maxmum value in array
+  #to ger the maximum value, subtract total sum of arr with minimum value in array
+
+  total_sum = sum(arr)
+  minimum_value = min(arr)
+  maximum_value = max(arr)
+  print(total_sum-maximum_value, total_sum-minimum_value)
+
+miniMaxSum2([3,1,5,2,4])
