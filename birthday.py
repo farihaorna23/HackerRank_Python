@@ -45,4 +45,5 @@ def birthdayCakeCandles1(candles):
 
   return candles.count(max(candles))
 
-print(birthdayCakeCandles1([3,2,1,3]))
+#print(birthdayCakeCandles1([3,2,1,3]))
+
