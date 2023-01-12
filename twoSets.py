@@ -32,7 +32,7 @@ def getTotalX(a, b):
   for num in both_list:
     if both_list.count(num) == total_length:
       count += 1
-    
+  
   return count//total_length
 
 
