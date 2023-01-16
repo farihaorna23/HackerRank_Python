@@ -24,8 +24,19 @@ def migratoryBirds(arr):
   else:
     return min(duplicates)
 
-print(migratoryBirds([1,1,2,2,3]))
-print(migratoryBirds([1,4,4,4,5,3]))
+def migratoryBirds1(arr):
+  l = [0] * len(arr)
+
+  for i in range(len(arr)):
+    l[arr[i]] +=1
+    # [0, 2, 2, 1, 0] 
+  # index method goes from left to right
+  # so in case of duplication, it will return the smallest index
+  return l.index(max(l))
+  
+
+print(migratoryBirds1([1,1,2,2,3]))
+# print(migratoryBirds([1,4,4,4,5,3]))
 
 
 
