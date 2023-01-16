@@ -29,7 +29,7 @@ def migratoryBirds1(arr):
 
   for i in range(len(arr)):
     l[arr[i]] +=1
-    # [0, 2, 2, 1, 0] 
+  # [0, 2, 2, 1, 0] 
   # index method goes from left to right
   # so in case of duplication, it will return the smallest index
   return l.index(max(l))
