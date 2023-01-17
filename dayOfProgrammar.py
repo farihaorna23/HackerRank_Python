@@ -1,3 +1,20 @@
+def dayOfProgrammer1(year):
+  if year == 1918:
+    return ''
+  elif year >= 1700 and year <= 1917:
+    if year % 4 == 0:
+      return "12.09.%s" % year
+    else:
+      return "13.09.%s" % year
+  elif year > 1918:
+    if year % 100 == 0 or year % 4 == 0 and year % 100 != 0:
+      return "12.09.%s" % year
+    else:
+      return "13.09.%s" % year
+
+print(dayOfProgrammer1(1800))
+
+
 def dayOfProgrammer(year):
   months = [31,28,31,30,31,30,31,31,30,31,30,31]
   #for julian calender (1700-1917)
@@ -32,7 +49,8 @@ def dayOfProgrammer(year):
   
   return f"{difference}.{month}.{year}"
 
-dayOfProgrammer(2017)
+
+
   
 
 
