@@ -32,8 +32,7 @@ def pageCount(n, p):
         break
       elif i != p and (i-1) != p:
         back_steps += 1
-  print(front_steps, back_steps)
-  return min([front_steps,back_steps])
+  return min(front_steps,back_steps)
 
 print(pageCount(4,4))
         
