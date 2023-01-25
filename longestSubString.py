@@ -1,5 +1,4 @@
 def lengthOfLongestSubstring(s):
-  #check if string is valid or not
   if s == "":
     return 0
   
